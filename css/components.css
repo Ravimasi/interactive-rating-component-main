@@ -1,0 +1,70 @@
+.w-32ch {
+  width: 32ch;
+}
+
+
+.xl-b {
+  font-weight: 700;
+}
+
+.xs-m {
+  font-size: calc(var(--txt1));
+  font-weight: 400;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+
+}
+
+.color3 {
+  color: var(--color3);
+}
+
+.color4 {
+  color: var(--color4);
+}
+
+.color5 {
+  color: var(--color5);
+}
+
+.color6 {
+  color: var(--color6);
+}
+
+.btn {
+  color: var(--color1);
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  background-color: var(--color6);
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: var(--color1);
+  color: var(--color6);
+  transition: 540ms ease;
+}
+
+.grid-center {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+input[type=radio] {
+  display: none;
+}

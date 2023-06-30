@@ -1,0 +1,65 @@
+@import url('/css/components.css');
+@import url('/css/content.css');
+@import url('/css/thank-you.css');
+
+:root {
+  --color1: hsl(0, 0%, 100%);
+  --color2: hsl(217, 12%, 63%);
+  --color3: hsl(216, 12%, 54%);
+  --color4: hsl(213, 19%, 18%);
+  --color5: hsl(216, 12%, 8%);
+  --color6: hsl(25, 97%, 53%);
+  --txt1: 15px;
+  --font: 'Overpass', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: hsl(216, 12%, 8%);
+  display: grid;
+  height: 100vh;
+  font-family: var(--font);
+}
+
+.container {
+  padding: 30px;
+  width: 375px;
+  max-width: 1440px;
+  place-self: center;
+  border-radius: 16px;
+}
+
+.container-bg {
+  background-image: linear-gradient(315deg,
+      hsl(216deg 32% 12%) 19%,
+      hsl(216deg 31% 13%) 48%,
+      hsl(217deg 31% 13%) 63%,
+      hsl(214deg 30% 14%) 74%,
+      hsl(215deg 31% 14%) 82%,
+      hsl(214deg 32% 14%) 89%,
+      hsl(213deg 32% 15%) 93%,
+      hsl(213deg 31% 15%) 96%,
+      hsl(214deg 31% 16%) 98%,
+      hsl(214deg 30% 16%) 100%,
+      hsl(212deg 30% 17%) 100%,
+      hsl(212deg 30% 17%) 100%);
+}
+
+
+.checked::after {
+  background-color: hsl(25, 97%, 53%) !important;
+}
+
+.star-icon {
+  background-color: var(--color4);
+  padding: 14px;
+  border-radius: 50%;
+}
+
+
+
+/* Thank-you Page */

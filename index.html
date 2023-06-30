@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="container-bg container w-32ch">
+      <img src="/images/icon-star.svg" alt="" class="star-icon" />
+
+      <section class="content ">
+        <h1 class="xl-b color1">How did we do?</h1>
+        <p class="xs color2">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings">
+          <form id="RatingForm" >
+          <label
+            for="rating1"
+            class="number-ratings color2 round-detail c-pointer"
+            onclick="IsChecked(this)"
+          >1
+            <input type="radio" name="rating" id="rating1" value="1" />
+          </label>
+          <label
+            for="rating2"
+            class="number-ratings color2 round-detail c-pointer"
+            onclick="IsChecked(this)"
+          >2
+            <input type="radio" name="rating" id="rating2" value="2" />
+          </label>
+          <label
+            for="rating3"
+            class="number-ratings color2 round-detail c-pointer"
+            onclick="IsChecked(this)"
+          >3
+            <input type="radio" name="rating" id="rating3" value="3" />
+          </label>
+          <label
+            for="rating4"
+            class="number-ratings color2 round-detail c-pointer"
+            onclick="IsChecked(this)"
+          >4
+            <input type="radio" name="rating" id="rating4" value="4" />
+          </label>
+          <label
+            for="rating5"
+            class="number-ratings color2 round-detail c-pointer"
+            onclick="IsChecked(this)"
+          >5
+            <input type="radio" name="rating" id="rating5" value="5" />
+          
+          </label>
+        </div>
+        <div class="button-area">
+          <button type="submit" class="btn c-pointer">S u b m i t</button>
+        </div>
+      </form>
+      </section>
+    </main>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <!-- You selected
+    <!-- Add rating here -->
+    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don't hesitate to get in touch! -->
+
+    <!-- Thank you state end -->
+  </body>
+</html>
