@@ -1,6 +1,6 @@
-@import './css/components.css';
-@import './css/content.css';
-@import './css/thank-you.css';
+@import './components.css';
+@import './content.css';
+@import './thank-you.css';
 
 :root {
   --color1: hsl(0, 0%, 100%);
