@@ -1,13 +1,16 @@
 .hero-area img {
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  justify-self: center;
 }
 
 .hero-area span {
   padding: 8px 15px;
   background-color: var(--color4);
+  max-width: 100%;
   border-radius: 26px;
 }
 
-.content h1 {
-  margin-bottom: 0px;
+.message {
+  max-width: 35ch;
 }

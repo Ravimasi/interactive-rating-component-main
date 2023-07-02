@@ -9,26 +9,39 @@
   --color4: hsl(213, 19%, 18%);
   --color5: hsl(216, 12%, 8%);
   --color6: hsl(25, 97%, 53%);
-  --txt1: 15px;
+  --txt1: 0.9375rem;
   --font: 'Overpass', sans-serif;
 }
 
-* {
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+}
+
+
+
 body {
-  margin: 0px;
+  margin: 0;
   background-color: hsl(216, 12%, 8%);
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--font);
+
 }
 
 .container {
-  padding: 30px;
-  width: 375px;
-  max-width: 1440px;
+  max-width: 90rem;
+  min-width: 375px;
+  padding: 2.875rem 2rem;
   place-self: center;
   border-radius: 16px;
 }
@@ -60,6 +73,54 @@ body {
   border-radius: 50%;
 }
 
+/* ResetCSS by Josh Comeau */
 
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
 
-/* Thank-you Page */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 28.125rem) {
+
+  body {
+    background-color: red;
+  }
+
+  .container {
+    width: 23.4375rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .message {
+    max-width: 32ch;
+  }
+}
